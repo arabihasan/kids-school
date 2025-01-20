@@ -13,7 +13,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 0 120px;
+    padding: 0 80px;
     align-items: center;
 }
 .brand-logo{
@@ -70,6 +70,38 @@ li{
     background-color: #01ACFD;
 }
 /* nav done */
+/* banner start */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    padding: 0 80px;
+}
+.ban-head{
+    font-weight: 700;
+    font-size: 3.50rem;
+    margin: 0;
+}
+.ban-des{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.btn2{
+    padding: 10px 47px;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.btn2:hover{
+    background-color: white;
+    color: black;
+}
 
 
 
@@ -91,6 +123,24 @@ li{
     .btn1{
         display: none;
     }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 10px;
+        gap: 20px;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .ban-head{
+        font-size: 2rem;
+    }
+    .ban-des{
+        font-size: 0.8rem;
+    }
 
 }
 /* responsive-small device */
@@ -107,6 +157,12 @@ li{
     .btn1{
         display: none;
     }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 20px;
+        gap: 20px;
+    }
 }
 /* responsive-medium device */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -119,6 +175,12 @@ li{
     .contact{
         gap: 20px;
     }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 30px;
+        gap: 20px;
+    }
 }
 /* responsive-large device */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -127,6 +189,10 @@ li{
     }
     .contact img{
         display: none;
+    }
+    .banner{
+        padding: 0 60px;
+        gap: 20px;
     }
 }
 /* responsive extra-large */
