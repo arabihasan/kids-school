@@ -102,17 +102,133 @@ li{
     background-color: white;
     color: black;
 }
-
-
-
-
-
-
-
-/* responsive small device */
+marquee{
+    border-top: 1px solid #DEF5FF;
+    border-bottom: 1px solid #DEF5FF;
+    margin-top: 40px;
+    font-size: medium;
+    padding: 0 80PX;
+}
+main{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+}
+/* Standard Curriculum style */
+.curriculum{
+    padding: 0 80px;
+}
+.curriculum-card{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+.head{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.standard-card1{
+    padding: 20px 40px;
+    background-image: linear-gradient(#DEF5FF, #ffffff, #FFFFFF, #FFFFFF);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DEF5FF;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 0 0 28px 1px rgba(0, 0, 0, 0.05);
+}
+.standard-card2{
+    padding: 20px 40px;
+    background-image: linear-gradient(#FFF4DC, #ffffff, #FFFFFF, #FFFFFF);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFF4DC;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 0 0 28px 1px rgba(0, 0, 0, 0.05);
+}
+.standard-card3{
+    padding: 20px 40px;
+    background-image: linear-gradient(#F2E8FF, #ffffff, #FFFFFF, #FFFFFF);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F2E8FF;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 0 0 28px 1px rgba(0, 0, 0, 0.05);
+}
+.link{
+    font-size: 1.50rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 30px;
+    color: #202020;
+}
+.des{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 30px;
+    color: #808080;
+}
+.stan-btn{
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+    border: 1px solid #DEF5FF;
+    color: #64C8FF;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.stan-btn:hover{
+    background-image: linear-gradient(#DEF5FF, #FFFFFF);
+}
+.stan-btn2{
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+    border: 1px solid #FFF4DC;
+    color: #F0AA00;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.stan-btn2:hover{
+    background-image: linear-gradient(#FFF4DC, #FFFFFF);
+}
+.stan-btn3{
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+    border: 1px solid #F2E8FF;
+    color: #8700FF;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.stan-btn3:hover{
+    background-image: linear-gradient(#F2E8FF, #FFFFFF);
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+/* responsive extra small device */
 @media screen and (max-width: 575px) {
     nav{
         padding: 10px 10px;
+        border-bottom: 1px solid #FEA301;
     }
     .brand-name{
         display: none;
@@ -141,12 +257,26 @@ li{
     .ban-des{
         font-size: 0.8rem;
     }
+    .curriculum{
+        padding: 10px;
+    }
+    .curriculum-card{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .head{
+        font-size: 1.50rem;
+    }
+    .arrow{
+        display: none;
+    }
 
 }
 /* responsive-small device */
 @media screen and (min-width: 576px) and (max-width: 767px) {
     nav{
         padding: 10px 20px;
+        border-bottom: 1px solid #FEA301;
     }
     .brand-name{
         display: none;
@@ -162,6 +292,15 @@ li{
         text-align: center;
         padding: 0 20px;
         gap: 20px;
+    }
+    .curriculum{
+        padding: 0 20px;
+    }
+    .curriculum-card{
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
     }
 }
 /* responsive-medium device */
@@ -181,6 +320,12 @@ li{
         padding: 0 30px;
         gap: 20px;
     }
+    .curriculum{
+        padding: 30px;
+    }
+    .curriculum-card{
+        gap: 10px;
+    }
 }
 /* responsive-large device */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -193,6 +338,12 @@ li{
     .banner{
         padding: 0 60px;
         gap: 20px;
+    }
+    .curriculum-card{
+        gap: 20px;
+    }
+    .curriculum{
+        padding: 0 60px;
     }
 }
 /* responsive extra-large */
